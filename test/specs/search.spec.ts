@@ -1,5 +1,6 @@
 import { $, browser,expect } from '@wdio/globals';
-import searchScreen from '../screens/search.screen';
+import searchScreen from '../screens/search.screen.js';
+import articleScreen from '../screens/article.screen.js';
 
 describe('Wikipedia search', () => {
     beforeEach(async () => {
@@ -17,7 +18,6 @@ describe('Wikipedia search', () => {
         await searchScreen.searchForArticle('Appium');
         await expect($('~Appium')).toBeDisplayed();
         await $('~Appium').click();
-        const articleHeading = $('//XCUIElementTypeOther[@name="banner"]//XCUIElementTypeStaticText[@name="Appium"]');
-        await expect(articleHeading).toBeDisplayed();
+        await expect(articleScreen.heading).toBeDisplayed();
     });
 });
