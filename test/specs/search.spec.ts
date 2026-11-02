@@ -1,12 +1,7 @@
 import { $, browser,expect } from '@wdio/globals';
 import searchScreen from '../screens/search.screen.js';
 import articleScreen from '../screens/article.screen.js';
-
-describe('Wikipedia search', () => {
-    beforeEach(async () => {
-        await browser.terminateApp('org.wikimedia.wikipedia');
-        await browser.activateApp('org.wikimedia.wikipedia');
-    });
+import '../setup/restart-app.js';
 
     it('should find an article', async () => {
         await searchScreen.searchForArticle('Appium');
@@ -20,4 +15,3 @@ describe('Wikipedia search', () => {
         await $('~Appium').click();
         await expect(articleScreen.heading).toBeDisplayed();
     });
-});
