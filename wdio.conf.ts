@@ -21,7 +21,7 @@ export const config: WebdriverIO.Config = {
     services: ['appium'],
     framework: 'mocha',
     reporters: ['spec'],
-    logLevel: 'info',
+    logLevel: 'warn',
 
     waitforTimeout: 10000,
     connectionRetryTimeout: 120000,
