@@ -14,19 +14,13 @@ describe('Settings', () => {
 
     it ('Search settings', async () => {
         
-        const searchButton = $(
-            '-ios class chain:**/XCUIElementTypeButton[`name == "Search"`]'
-        );
-        await searchButton.click();
-
+        await settingsScreen.searchSettingsButton.click();
         await expect($('~Show languages on search')).toBeDisplayed();
     });
 
 
 it('should toggle Show languages on search', async () => {
-    const toggleButton = $(
-        '//XCUIElementTypeStaticText[@name="Show languages on search"]/../XCUIElementTypeSwitch/XCUIElementTypeSwitch'
-    );
+    const toggleButton = settingsScreen.showLanguageToggle;
 
     await expect(toggleButton).toBeDisplayed();
 
