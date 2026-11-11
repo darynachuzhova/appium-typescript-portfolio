@@ -1,7 +1,7 @@
 import { $, browser,expect } from '@wdio/globals';
-import searchScreen from '../screens/search.screen.js';
-import articleScreen from '../screens/article.screen.js';
-import '../setup/restart-app.js';
+import searchScreen from '../../screens/search.screen.js';
+import articleScreen from '../../screens/article.screen.js';
+import '../../setup/restart-app.js';
 
     it('should find an article', async () => {
         await searchScreen.searchForArticle('Appium');

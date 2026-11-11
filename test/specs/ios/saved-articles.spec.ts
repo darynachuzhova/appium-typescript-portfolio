@@ -1,8 +1,8 @@
 import {$, expect} from '@wdio/globals';
-import searchScreen from '../screens/search.screen.js';
-import articleScreen from '../screens/article.screen.js';
-import { restartApp } from '../setup/restart-app.js';
-import { step } from '../helpers/step.js';
+import searchScreen from '../../screens/search.screen.js';
+import articleScreen from '../../screens/article.screen.js';
+import { restartApp } from '../../setup/restart-app.js';
+import { step } from '../../helpers/step.js';
 
 
 describe('Saved articles', () => {

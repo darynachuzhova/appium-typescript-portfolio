@@ -12,5 +12,5 @@
     "noEmit": true,
     "skipLibCheck": true
   },
-  "include": ["test/**/*.ts", "wdio.conf.ts"]
+  "include": ["test/**/*.ts", "wdio.conf.ts", "wdio.android.conf.ts"]
 }

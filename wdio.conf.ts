@@ -4,7 +4,7 @@ export const config: WebdriverIO.Config = {
     port: 4723,
     path: '/',
 
-    specs: ['./test/specs/**/*.spec.ts'],
+    specs: ['./test/specs/ios/**/*.spec.ts'],
     maxInstances: 1,
 
     capabilities: [{

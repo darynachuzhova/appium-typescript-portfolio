@@ -9,3 +9,14 @@
 - Stop the Appium server only if you started it yourself.
 - You may inspect the local test app, query Appium sessions, and count locator matches without asking for confirmation.
 - You may navigate within the test app as needed for inspection.
+
+## Git workflow
+
+When I explicitly ask to commit and push:
+- Review git status and the diff.
+- Stage only files relevant to the requested changes.
+- Exclude secrets, generated artifacts, and unrelated changes.
+- Create a descriptive commit and push the current branch to origin.
+- Do not force-push.
+- Report the commit hash and push result.
+- Do not rerun tests if I have confirmed they passed for the current changes.
