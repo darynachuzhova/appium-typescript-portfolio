@@ -1,7 +1,7 @@
 import {$, expect} from '@wdio/globals';
 import { restartApp } from '../../setup/restart-app.js';
 import { step } from '../../helpers/step.js';
-import homeScreen from '../../screens/home.screen.js';
+import homeScreen from '../../screens/ios/home.screen.js';
 
 describe('For You tab', () => {
 

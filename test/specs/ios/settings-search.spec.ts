@@ -1,5 +1,5 @@
 import { $, expect } from '@wdio/globals';
-import settingsScreen from '../../screens/settings.screen.js';
+import settingsScreen from '../../screens/ios/settings.screen.js';
 
 describe('Settings', () => {
     it('should open settings screen', async () => {
